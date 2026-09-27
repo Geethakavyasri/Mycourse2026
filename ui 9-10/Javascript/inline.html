@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ <style>
+    
+ </style>
+</head>
+<body class="container mt-5">
+    <form class="border rounded-2 shadow p-4 m-auto " style="width: 300px;">
+        <div>
+            <h4 class="text-muted">Calculator</h4>
+        </div>
+
+       <div class="mt-2">
+         <input type="text" placeholder="frist number" id="t1">
+       </div>
+
+       <div class="mt-2">
+         <input type="text" placeholder="second number" id="t2">
+       </div>
+
+        <div class="mt-2">
+          <input type="text" placeholder="Result" id="t3">
+        </div>
+        <br>
+     
+         <button type="button" onclick="t3.value=parseInt(t1.value)+parseInt(t2.value)" class="btn btn-success">Add</button>
+         <button type="button" onclick="t3.value=t1.value-t2.value" class="btn btn-info">sub</button>
+         <button type="button" onclick="t3.value=t1.value*t2.value" class="btn btn-primary">Mul</button>
+         <button type="button" onclick="t3.value=t1.value/t2.value" class="btn btn-secondary">Mod</button>
+
+
+    </form>
+       
+    
+    
+</body>
+</html>
